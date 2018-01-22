@@ -1,3 +1,4 @@
+
 function solveSudoku(inputBoard, stats) {
   
   var stats = stats || {};
@@ -376,6 +377,8 @@ function generatePuzzle(difficulty) {
     var state = {};
     solvedPuzzle[row][col] = 0;
     var resolvedPuzzle = solveSudoku(solvedPuzzle, state);
+
+     var resolvedPuzzleFin = resolvedPuzzle;  
     
     // some clarity -- what the solver considers 'medium' is hard for most users
     var undo = false;
@@ -396,8 +399,8 @@ function generatePuzzle(difficulty) {
     
     
   }
-  
-  return solvedPuzzle;
+
+  return {solvedPuzzle,resolvedPuzzle};
   
 }
 
@@ -754,6 +757,8 @@ function initialize() {
   // hook up buttons
   
   var currentPuzzle = generatePuzzle();
+  console.log(currentPuzzle.solvedPuzzle);
+  currentPuzzle = currentPuzzle.solvedPuzzle;
   renderBoard(currentPuzzle);
   
   var amazeButton = document.getElementById('amazeButton');
@@ -866,6 +871,7 @@ function initialize() {
     clearErrors();
     var value = parseInt(difficulty.options[difficulty.selectedIndex].value);
     currentPuzzle = generatePuzzle(value);
+    
     renderBoard(currentPuzzle);
     winBlock.style.display = 'none';
   }, false);
@@ -875,8 +881,22 @@ function initialize() {
   newGameButton.addEventListener('click', function() {
     clearErrors();
     var value = parseInt(difficulty.options[difficulty.selectedIndex].value);
+console.log(value);
     currentPuzzle = generatePuzzle(value);
-    renderBoard(currentPuzzle);
+// console.log(currentPuzzle.resolvedPuzzle);
+// console.log(currentPuzzle.solvedPuzzle);
+    renderBoard(currentPuzzle.solvedPuzzle);
+//console.log('count the 1s');
+var cnt = 0;
+var cntarry = currentPuzzle.solvedPuzzle;
+for(i=1 ; i<=9 ; i++){
+  cnt = 0;
+cntarry.forEach(function(item){
+    item.forEach(function(item){if(item === i){cnt++}})
+});
+  console.log(i,cnt);
+}
+console.log('count the 1s');
   }, false);
   
   var solveButton = document.getElementById('solveButton');
