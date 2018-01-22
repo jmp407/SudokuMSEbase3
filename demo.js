@@ -29,6 +29,7 @@ function solveSudoku(inputBoard, stats) {
     var leastFree = [];
     var leastRemaining = 9;
     
+// this loop ends at 104
     for(var i = 0; i < 9; i++) {
       for(var j = 0; j < 9; j++) {
         
@@ -365,7 +366,7 @@ function generatePuzzle(difficulty) {
     }
     
     //easy check
-    if(difficulty == 1 && knownCount <= 35) {
+    if(difficulty == 1 && knownCount <= 38) {
       break;
     }
     
@@ -399,7 +400,32 @@ function generatePuzzle(difficulty) {
     
     
   }
-
+//console.log(solvedPuzzle);  Count adjacent zeroes
+var adz = 0;
+var zroes = 0;
+var zrw =[0,0,0,0,0,0,0,0,0];
+var zcl =[0,0,0,0,0,0,0,0,0];
+ for(var yc = 0; yc <= 8; yc++) {
+    for(var xr = 0; xr <= 8; xr++) {
+      if(solvedPuzzle[xr][yc]===0){
+        zroes++;
+        zrw[xr]++;
+        zcl[yc]++;
+        if(xr<8){
+          if(solvedPuzzle[xr+1][yc]===0){
+          adz++;
+          }
+        }  
+        if(yc<8){
+          if(solvedPuzzle[xr][yc+1]===0){
+          adz++;
+          }
+        }  
+        
+      }
+    }
+ }
+console.log(zroes,adz,zrw,zcl);
   return {solvedPuzzle,resolvedPuzzle};
   
 }
@@ -757,9 +783,9 @@ function initialize() {
   // hook up buttons
   
   var currentPuzzle = generatePuzzle();
-  console.log(currentPuzzle.solvedPuzzle);
-  currentPuzzle = currentPuzzle.solvedPuzzle;
-  renderBoard(currentPuzzle);
+  console.log(currentPuzzle.resolvedPuzzle);
+//  currentPuzzle = currentPuzzle.solvedPuzzle;
+  renderBoard(currentPuzzle.solvedPuzzle);
   
   var amazeButton = document.getElementById('amazeButton');
   var calculatingDiv = document.getElementById('calculating');
@@ -802,7 +828,9 @@ function initialize() {
   var checkButton = document.getElementById('checkButton');
   
   checkButton.addEventListener('click', function() {
-    
+
+dend = new Date();
+console.log((dend - dstart)/60000);    
     clearErrors();
     
     var board = getCurrentBoard();
@@ -872,7 +900,7 @@ function initialize() {
     var value = parseInt(difficulty.options[difficulty.selectedIndex].value);
     currentPuzzle = generatePuzzle(value);
     
-    renderBoard(currentPuzzle);
+    renderBoard(currentPuzzle.solvedPuzzle);
     winBlock.style.display = 'none';
   }, false);
   
@@ -881,13 +909,15 @@ function initialize() {
   newGameButton.addEventListener('click', function() {
     clearErrors();
     var value = parseInt(difficulty.options[difficulty.selectedIndex].value);
-console.log(value);
+
+    dstart = new Date();
+    console.log(dstart); //Make this a timer
     currentPuzzle = generatePuzzle(value);
 // console.log(currentPuzzle.resolvedPuzzle);
 // console.log(currentPuzzle.solvedPuzzle);
     renderBoard(currentPuzzle.solvedPuzzle);
 //console.log('count the 1s');
-var cnt = 0;
+var cnts = 0;
 var cntarry = currentPuzzle.solvedPuzzle;
 for(i=1 ; i<=9 ; i++){
   cnt = 0;
@@ -895,15 +925,19 @@ cntarry.forEach(function(item){
     item.forEach(function(item){if(item === i){cnt++}})
 });
   console.log(i,cnt);
+  cnts = cnts + cnt
 }
-console.log('count the 1s');
+console.log('Total cnt: ',cnts);
   }, false);
   
   var solveButton = document.getElementById('solveButton');
   
   solveButton.addEventListener('click', function() {
     clearErrors();
-    renderSolvedBoard(solveSudoku(currentPuzzle));
+    tslv=new Date();
+    renderSolvedBoard(solveSudoku(currentPuzzle.solvedPuzzle));
+    tslv=new Date()-tslv;
+    console.log(tslv);
   }, false);
   
   addEventListener('mouseup', function(event) {
@@ -912,6 +946,9 @@ console.log('count the 1s');
     }
   }, false);
   
-}
+}    //end of initialize function
+
+var dend = new Date();
+var dstart = new Date();
 
 addEventListener('DOMContentLoaded', initialize, false);
