@@ -21,6 +21,7 @@ function solveSudoku(inputBoard, stats) {
   
   var loopCount = 0;
   
+// outerLoop ends at 120
   outerLoop: while(!solved && !impossible) {
     solved = true;
     mutated = false;
@@ -29,7 +30,7 @@ function solveSudoku(inputBoard, stats) {
     var leastFree = [];
     var leastRemaining = 9;
     
-// this loop ends at 104
+// this loop ends at 105
     for(var i = 0; i < 9; i++) {
       for(var j = 0; j < 9; j++) {
         
