@@ -1,1 +1,3 @@
-Make changes in the learn branch.
+Sudoku
+======
+Learn how to use and modify this js to rate game difficulty.
