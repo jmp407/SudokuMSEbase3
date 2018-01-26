@@ -831,7 +831,7 @@ function initialize() {
   checkButton.addEventListener('click', function() {
 
 dend = new Date();
-console.log((dend - dstart)/60000);    
+console.log("Minutes since start: " + (dend - dstart)/60000);    
     clearErrors();
     
     var board = getCurrentBoard();
@@ -935,10 +935,10 @@ console.log('Total cnt: ',cnts);
   
   solveButton.addEventListener('click', function() {
     clearErrors();
-    tslv=new Date();
+//    tslv=new Date();
     renderSolvedBoard(solveSudoku(currentPuzzle.solvedPuzzle));
-    tslv=new Date()-tslv;
-    console.log(tslv);
+//    tslv=new Date()-tslv;
+//    console.log(tslv);
   }, false);
   
   addEventListener('mouseup', function(event) {
