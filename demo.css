@@ -1,4 +1,4 @@
-﻿html,body
+html,body
 {
     width: 100%;
     height: 100%;
@@ -10,7 +10,7 @@ body
 {
     margin: 0px;
     padding: 0px;
-    background: #E10A04 url('images/backgroundx.png') repeat-x;
+    background: #f3a2a0 url('images/backgroundx.png') repeat-x;
     font-family: Arial;
     color: #FFAEAE;
     font-size: 12px;
@@ -119,7 +119,7 @@ td.boardCellGroupA td.boardCell
     width: 44px;
     height: 44px;
     border: 1px solid #EC0904;
-    background-color: #DA0603;
+    background-color: #9e9e9e;
 }
 
 td.boardCellGroupB td.boardCell
@@ -127,7 +127,7 @@ td.boardCellGroupB td.boardCell
     width: 44px;
     height: 44px;
     border: 1px solid #D40703;
-    background-color: #C40502;
+    background-color: #929292;
 }
 
 .staticValue

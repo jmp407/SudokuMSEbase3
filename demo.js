@@ -1,4 +1,4 @@
-
+/*
 function solveSudoku(inputBoard, stats) {
   
   var stats = stats || {};
@@ -127,6 +127,7 @@ function solveSudoku(inputBoard, stats) {
     return board;
   }
 }
+*/
 
 function getZone(i) {
   if(i < 3) {
