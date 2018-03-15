@@ -1,0 +1,243 @@
+{
+	"Lzero": "A new first line",
+	"line_1": {
+		"line_1": "0 HEAD",
+		"level": "0",
+		"gctag": "HEAD",
+		"gctxt": ""
+	},
+	"line_2": {
+		"line_2": "1 SOUR FTM",
+		"level": "1",
+		"gctag": "SOUR ",
+		"gctxt": " FTM"
+	},
+	"line_3": {
+		"line_3": "2 VERS Family Tree Maker (22.0.0.1345)",
+		"level": "2",
+		"gctag": "VERS ",
+		"gctxt": " Family Tree Maker (22.0.0.1345)"
+	},
+	"line_4": {
+		"line_4": "2 NAME Family Tree Maker for Windows",
+		"level": "2",
+		"gctag": "NAME ",
+		"gctxt": " Family Tree Maker for Windows"
+	},
+	"line_5": {
+		"line_5": "2 CORP Ancestry.com",
+		"level": "2",
+		"gctag": "CORP ",
+		"gctxt": " Ancestry.com"
+	},
+	"line_6": {
+		"line_6": "3 ADDR 360 W 4800 N",
+		"level": "3",
+		"gctag": "ADDR ",
+		"gctxt": " 360 W 4800 N"
+	},
+	"line_7": {
+		"line_7": "4 CONT Provo, UT 84604",
+		"level": "4",
+		"gctag": "CONT ",
+		"gctxt": " Provo, UT 84604"
+	},
+	"line_8": {
+		"line_8": "3 PHON (801) 705-7000",
+		"level": "3",
+		"gctag": "PHON ",
+		"gctxt": " (801) 705-7000"
+	},
+	"line_9": {
+		"line_9": "1 DEST GED55",
+		"level": "1",
+		"gctag": "DEST ",
+		"gctxt": " GED55"
+	},
+	"line_10": {
+		"line_10": "1 DATE 31 DEC 2014",
+		"level": "1",
+		"gctag": "DATE ",
+		"gctxt": " 31 DEC 2014"
+	},
+	"line_11": {
+		"line_11": "1 CHAR UTF-8",
+		"level": "1",
+		"gctag": "CHAR ",
+		"gctxt": " UTF-8"
+	},
+	"line_12": {
+		"line_12": "1 FILE C:\\Users\\TomP\\Desktop\\Descendants of John Pottenger_2014-12-31.ged",
+		"level": "1",
+		"gctag": "FILE ",
+		"gctxt": " C:\\Users\\TomP\\Desktop\\Descendants of John Pottenger_2014-12-31.ged"
+	},
+	"line_13": {
+		"line_13": "1 SUBM @SUBM@",
+		"level": "1",
+		"gctag": "SUBM ",
+		"gctxt": " @SUBM@"
+	},
+	"line_14": {
+		"line_14": "1 GEDC",
+		"level": "1",
+		"gctag": "GEDC",
+		"gctxt": ""
+	},
+	"line_15": {
+		"line_15": "2 VERS 5.5",
+		"level": "2",
+		"gctag": "VERS ",
+		"gctxt": " 5.5"
+	},
+	"line_16": {
+		"line_16": "2 FORM LINEAGE-LINKED",
+		"level": "2",
+		"gctag": "FORM ",
+		"gctxt": " LINEAGE-LINKED"
+	},
+	"line_17": {
+		"line_17": "0 @SUBM@ SUBM",
+		"level": "0",
+		"gctag": "@SUBM",
+		"gctxt": "M@ SUBM"
+	},
+	"line_18": {
+		"line_18": "1 NAME Thomas Edward Pottenger",
+		"level": "1",
+		"gctag": "NAME ",
+		"gctxt": " Thomas Edward Pottenger"
+	},
+	"line_19": {
+		"line_19": "1 ADDR 1168 S Shawnee Dr",
+		"level": "1",
+		"gctag": "ADDR ",
+		"gctxt": " 1168 S Shawnee Dr"
+	},
+	"line_20": {
+		"line_20": "2 CONT Greenville, Ohio 45331",
+		"level": "2",
+		"gctag": "CONT ",
+		"gctxt": " Greenville, Ohio 45331"
+	},
+	"line_21": {
+		"line_21": "2 CONT USA",
+		"level": "2",
+		"gctag": "CONT ",
+		"gctxt": " USA"
+	},
+	"line_22": {
+		"line_22": "1 EMAIL tompottenger@outlook.com",
+		"level": "1",
+		"gctag": "EMAIL",
+		"gctxt": "L tompottenger@outlook.com"
+	},
+	"line_23": {
+		"line_23": "1 PHON 937-548-6784",
+		"level": "1",
+		"gctag": "PHON ",
+		"gctxt": " 937-548-6784"
+	},
+	"line_24": {
+		"line_24": "0 @I1@ INDI",
+		"level": "0",
+		"gctag": "@I1@ ",
+		"gctxt": " INDI"
+	},
+	"line_25": {
+		"line_25": "1 NAME Thomas Edward /Pottenger/",
+		"level": "1",
+		"gctag": "NAME ",
+		"gctxt": " Thomas Edward /Pottenger/"
+	},
+	"line_26": {
+		"line_26": "2 SOUR @S3@",
+		"level": "2",
+		"gctag": "SOUR ",
+		"gctxt": " @S3@"
+	},
+	"line_27": {
+		"line_27": "3 DATA",
+		"level": "3",
+		"gctag": "DATA",
+		"gctxt": ""
+	},
+	"line_28": {
+		"line_28": "4 TEXT Residence date:  2002Residence place:  Denver, Colorado",
+		"level": "4",
+		"gctag": "TEXT ",
+		"gctxt": " Residence date:  2002Residence place:  Denver, Colorado"
+	},
+	"line_29": {
+		"line_29": "3 NOTE",
+		"level": "3",
+		"gctag": "NOTE",
+		"gctxt": ""
+	},
+	"line_30": {
+		"line_30": "4 CONC http://trees.ancestry.com/rd?f=sse&amp;db=2000wp&amp;h=93314462&amp;ti=0&amp;indiv=try",
+		"level": "4",
+		"gctag": "CONC ",
+		"gctxt": " http://trees.ancestry.com/rd?f=sse&amp;db=2000wp&amp;h=93314462&amp;ti=0&amp;indiv=try"
+	},
+	"line_31": {
+		"line_31": "4 CONC &amp;gss=pt",
+		"level": "4",
+		"gctag": "CONC ",
+		"gctxt": " &amp;gss=pt"
+	},
+	"line_32": {
+		"line_32": "4 CONT",
+		"level": "4",
+		"gctag": "CONT",
+		"gctxt": ""
+	},
+	"line_33": {
+		"line_33": "2 SOUR @S1@",
+		"level": "2",
+		"gctag": "SOUR ",
+		"gctxt": " @S1@"
+	},
+	"line_34": {
+		"line_34": "3 DATA",
+		"level": "3",
+		"gctag": "DATA",
+		"gctxt": ""
+	},
+	"line_35": {
+		"line_35": "4 TEXT Birth date:  20 Jan 1955Birth place:  Residence date:  1994Residence ",
+		"level": "4",
+		"gctag": "TEXT ",
+		"gctxt": " Birth date:  20 Jan 1955Birth place:  Residence date:  1994Residence "
+	},
+	"line_36": {
+		"line_36": "5 CONC place:  Cincinnati, OH",
+		"level": "5",
+		"gctag": "CONC ",
+		"gctxt": " place:  Cincinnati, OH"
+	},
+	"line_37": {
+		"line_37": "3 NOTE",
+		"level": "3",
+		"gctag": "NOTE",
+		"gctxt": ""
+	},
+	"line_38": {
+		"line_38": "4 CONC http://trees.ancestry.com/rd?f=sse&amp;db=uspublicrecords3&amp;h=411899196&amp;ti=",
+		"level": "4",
+		"gctag": "CONC ",
+		"gctxt": " http://trees.ancestry.com/rd?f=sse&amp;db=uspublicrecords3&amp;h=411899196&amp;ti="
+	},
+	"line_39": {
+		"line_39": "4 CONC 0&amp;indiv=try&amp;gss=pt",
+		"level": "4",
+		"gctag": "CONC ",
+		"gctxt": " 0&amp;indiv=try&amp;gss=pt"
+	},
+	"line_40": {
+		"line_40": "4 CONT  ",
+		"level": "4",
+		"gctag": "CONT ",
+		"gctxt": "  "
+	}
+}

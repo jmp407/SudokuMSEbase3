@@ -924,23 +924,17 @@ console.log("Minutes since start: " + (dend - dstart)/60000);
     renderBoard(currentPuzzle.solvedPuzzle);
 //console.log('count the 1s');
 var cnts = 0;
-var xbar = 0;
 var cntarry = currentPuzzle.solvedPuzzle;
-for(i=1 ; i<=9 ; i++){  // digits in puzzle at start
+for(i=1 ; i<=9 ; i++){
   cnt = 0;
-cntarry.forEach(function(item){  //cntarry is the puzzle
+cntarry.forEach(function(item){
     item.forEach(function(item){if(item === i){cnt++}})
 });
 //  console.log(i,cnt);
-  cnts = cnts + cnt;
-  cnt = cnt - 5; // reuse cnt to calculate xbar
-  cnt = cnt * cnt; // square of the deviation
-  xbar = xbar + cnt; // sum the sqrs
+  cnts = cnts + cnt
 }
-xbar = xbar / 9;// average sqrs of the deviation
-xbar = Math.sqrt(xbar);// take the sqrt for xbar
 rate = loopCntr * currentPuzzle.adz;
-console.log('Total cnt: ',cnts,' xbar ',xbar,' Rate?: ',rate);
+console.log('Total cnt: ',cnts,' Rate?: ',rate);
 loopCntr = 0;
   }, false);
   
@@ -961,9 +955,6 @@ loopCntr = 0;
     }
   }, false);
   
-      var digH = document.getElementById('digitHelpers');
-      document.getElementById('digitHelpers').innerHTML = "987654321";
-  
 }    //end of initialize function
 
 var dend = new Date();
@@ -974,5 +965,5 @@ var dstart = new Date();
 var loopCntr = 1;
 
 addEventListener('DOMContentLoaded', initialize, false);
-// A line to test GitHub and Ubuntu/Google
+// one more line to test GitHub
 // don't forget to commit before push
